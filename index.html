@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+    async
+    src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+  ></script>
+  </head>
+  <body>
+    <main>
+      <div class="background"></div>
+      <h1 id="title">Space Trip Agency</h1>
+      <p id="description">
+        Apply the order 66 on beautifully instagramable places accross the
+        empire ...
+      </p>
+      <section class="survey">
+        <form action="" id="survey-form">
+          <div class="form-group">
+            <label for="name" id="name-label">Name: </label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              class="long-input"
+              required=""
+              placeholder="Enter your name"
+            ></input>
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email: </label>
+            <input
+              type="email"
+              id="email"
+              required=""
+              class="long-input"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label">Age: </label>
+            <input
+              type="number"
+              id="number"
+              class="long-input"
+              min="0"
+              max="150"
+              required=""
+
+              placeholder="Enter your age"
+            />
+
+          </div>
+          <div class="form-group">
+            <label for="dropdown">What planet have you visited before ?</label>
+            <select name="dropdown" id="dropdown">
+              <option value="">--Please choose an option--</option>
+              <option value="">Mars</option>
+              <option value="">Venus</option>
+              <option value="">Saturn</option>
+              <option value="">Mercury</option>
+              <option value="">None of the above</option>
+            </select>
+
+          </div>
+
+          <div class="form-group seatCheckbox">
+            <p>Which seat do you prefer?</p>
+            <label>
+              <input type="radio" name="seatCheckbox" id="left" value="left" >
+              Left
+            </label>
+              <label>
+                <input type="radio" name="seatCheckbox" id="right" value="right" >
+              Right
+            </label>
+
+          </div>
+          <div class="form-group spacefluCheckbox">
+            <p>Are you subject to space flu?</p>
+            <label for="yes">
+              <input type="checkbox" name="spaceflu" id="yes" value="yes" />
+              YES</label>
+            <label for="no">
+              <input type="checkbox" name="spaceflu" id="no" value="no" />
+              NO</label>
+          </div>
+          <div class="form-group">
+            <p>Write a short essay on why you should get aboard:</p>
+            <textarea
+              name="essay"
+              id="essay"
+              cols="30"
+              rows="10"
+              placeholder="Tell us about you ..."
+            ></textarea>
+
+          </div>
+          <input class="long-input" type="submit" id="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+
+</html>
